@@ -111,17 +111,9 @@ class _DotsPageState extends State<DotsPage> {
   },
 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 40.0),
-                child: ListTile(
-                  title: Text("On Progress request"),
-                  onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text("On Progress request clicked")),
-                    );
-                  },
-                ),
-              ),
+            
+                
+              
               Padding(
                 padding: const EdgeInsets.only(left: 40.0),
                 child: ListTile(
@@ -160,15 +152,7 @@ class _DotsPageState extends State<DotsPage> {
             Divider(),
 
             // Other clickable options
-            ListTile(
-              leading: Icon(Icons.archive, color: Colors.cyan),
-              title: Text("Archived Request"),
-              onTap: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text("Archived Request clicked")),
-                );
-              },
-            ),
+            
             ListTile(
               leading: Icon(Icons.person, color: Colors.cyan),
               title: Text("Profile"),
