@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
                 children: [
-                  _buildCard("All Requests", Colors.blue),
+                  _buildCard("All Requests", const Color.fromARGB(255, 33, 243, 89)),
                   _buildCard("Pending Requests", Colors.orange),
                   _buildCard("Approved Requests", Colors.green),
                   _buildCard("Rejected Requests", Colors.red),
@@ -164,12 +164,16 @@ class _HomePageState extends State<HomePage> {
       );
   }
 
+
+  
+
   // Updated helper method: makes cards clickable
   Widget _buildCard(String title, Color color) {
     return InkWell(
       onTap: () => _onCardTapped(title),
       child: Container(
         decoration: BoxDecoration(
+          // ignore: deprecated_member_use
           color: color.withOpacity(0.2),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: color, width: 2),
