@@ -3,6 +3,8 @@ import 'draft_storage.dart';
 import 'draft_detail_page.dart';
 
 class DraftRequestsPage extends StatelessWidget {
+  const DraftRequestsPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

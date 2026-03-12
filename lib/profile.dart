@@ -89,7 +89,7 @@ class _ProfilePageState extends State<ProfilePage> {
             SizedBox(height: 16),
 
             DropdownButtonFormField<String>(
-              value: selectedGender,
+              initialValue: selectedGender,
               hint: Text("Select Gender"),
               items: ["Male", "Female", "Other"]
                   .map((g) => DropdownMenuItem(value: g, child: Text(g)))

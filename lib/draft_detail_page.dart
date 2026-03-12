@@ -4,7 +4,7 @@ import 'draft_storage.dart';
 class DraftDetailPage extends StatelessWidget {
   final int index;
 
-  DraftDetailPage({required this.index});
+  const DraftDetailPage({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {

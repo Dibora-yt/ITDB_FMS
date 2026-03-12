@@ -59,7 +59,7 @@ void _saveToDraft() {
         child: ListView(
           children: [
             DropdownButtonFormField<String>(
-              value: selectedOrganization,
+              initialValue: selectedOrganization,
               hint: Text("Select Organization"),
               items: ["Other", "Organization A", "Organization B"]
                   .map((org) => DropdownMenuItem(value: org, child: Text(org)))
