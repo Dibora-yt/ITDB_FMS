@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
                 children: [
-                  _buildCard("All Requests", const Color.fromARGB(255, 33, 243, 89)),
+                  _buildCard("All Requests", const Color.fromARGB(255, 33, 233, 243)),
                   _buildCard("Pending Requests", Colors.orange),
                   _buildCard("Approved Requests", Colors.green),
                   _buildCard("Rejected Requests", Colors.red),
